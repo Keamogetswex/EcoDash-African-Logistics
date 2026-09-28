@@ -11,7 +11,11 @@ In the model I have applied trigonometry for the movement of the electronic vehi
 
 
 Wireframes:
+
+
 --Computer
+
+
 <img width="719" height="508" alt="image" src="https://github.com/user-attachments/assets/08b8c15d-e9ae-4a60-b240-e659740efb93" />
 
 <img width="707" height="681" alt="image" src="https://github.com/user-attachments/assets/7711f2c9-c104-4053-bed8-90454e9ca963" />
@@ -20,11 +24,47 @@ Wireframes:
 
 
 --Phones
+
+
 <img width="488" height="688" alt="image" src="https://github.com/user-attachments/assets/c929b6df-e24e-43c3-8d39-9ab6b24862e4" />
 
 <img width="419" height="682" alt="image" src="https://github.com/user-attachments/assets/5988321d-7f55-460d-9122-5ff3a650fdc8" />
 
 <img width="428" height="666" alt="image" src="https://github.com/user-attachments/assets/2d8ca916-0bf7-48dc-bf39-379282a48a4a" />
+
+
+AI Reflection Log:
+
+AI REFLECTION LOG:
+Prompt:
+I prompted AI for Particle effects to showcase that the electronic vehicle is charging
+
+Response:
+class Particle {
+    constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.vx = (Math.random() - 0.5) * 2;
+        this.vy = (Math.random() - 0.5) * 2;
+        this.life = 1.0;
+    }
+    update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.life -= 0.04;
+    }
+    draw(ctx) {
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, this.life);
+        ctx.fillStyle = this.color;
+        ctx.fillRect(this.x, this.y, 4, 4);
+        ctx.restore();
+    }
+}
+Problems Identified:
+I made use of the built in ai in vscode which didn’t give me issues once I applied the response in my code
+
 
 
 
