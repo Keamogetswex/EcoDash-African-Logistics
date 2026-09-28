@@ -68,6 +68,21 @@ I made use of the built in ai in vscode which didn’t give me issues once I app
 
 
 
+Installation and Setup Instructions:
+
+
+1. Download all the project files and pictures
+
+2. Put all downloaded files in ONE FOLDER
+
+3. Open folder in VS code or preferred and COMPATIBLE coding tool if you would like to edit the code
+
+4. Open the index.html file in web browser of your choice.
+   
+
+
+
+
 
 
 
